@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>   
-    <header>
+    <header id='header'>
         <div class="container">
             <ul class="header-left">
                 <li><a href="##" class="link">亲,请登录</a></li>
@@ -18,20 +18,20 @@
                 <li><a href="##" class="link">手机逛慕淘</a></li>
             </ul>
             <ul class="header-right">
-                <li>
+                <li class='toggle-list'>
                     <a href="##" class="link toggle">我的慕淘<i class="iconfont">&#xe60b;</i></a>
                     <ul class="dropdown dropdown-left">
                         <li><a href="##" class="link">已买的到商品</a></li>
                         <li><a href="##" class="link">我的足迹</a></li>
                     </ul>
                 </li>
-                <li><a href="##" class="link toggle">收藏夹<i class="iconfont">&#xe60b;</i></a>
+                <li class='toggle-list'><a href="##" class="link toggle">收藏夹<i class="iconfont">&#xe60b;</i></a>
                     <ul class="dropdown dropdown-left">
                             <li><a href="##" class="link">收藏的宝贝</a></li>
                             <li><a href="##" class="link">收藏的店铺</a></li>
                     </ul></li>
                 <li><a href="##" class="link diff">商品分类</a></li>
-                <li><a href="##" class="link toggle">卖家中心<i class="iconfont">&#xe60b;</i></a>
+                <li class='toggle-list'><a href="##" class="link toggle">卖家中心<i class="iconfont">&#xe60b;</i></a>
                     <ul class="dropdown dropdown-left">
                         <li><a href="##" class="link">免费开店</a></li>
                         <li><a href="##" class="link">已卖出的宝贝</a></li>
@@ -40,7 +40,7 @@
                         <li><a href="##" class="link">卖家培训中心</a></li>
                         <li><a href="##" class="link">体验中心</a></li>
                     </ul></li>
-                <li><a href="##" class="link toggle">联系客服<i class="iconfont">&#xe60b;</i></a>
+                <li class='toggle-list'><a href="##" class="link toggle">联系客服<i class="iconfont">&#xe60b;</i></a>
                     <ul class="dropdown dropdown-right">
                         <li><a href="##" class="link">消费者客服</a></li>
                         <li><a href="##" class="link">卖家客服</a></li>
@@ -54,9 +54,9 @@
                 <h1><a href="##">慕淘网</a></h1>
             </div>
             <div class="inp">
-                <form action="">
-                    <input type="text" placeholder="灵魂美食一元抢">
-                    <input type="button" value="搜索">
+                <form action="https://s.taobao.com/search">
+                    <input type="text" placeholder="灵魂美食一元抢" name='q' id='search'>
+                    <input type="submit" value="搜索">
                 </form>
                 <ul class="select">
                     <li><a href="">111</a></li>
@@ -87,14 +87,15 @@
     <section>
         <div class="container">
            <div class="section-left">
-               <ul>
+               <ul id='slide'>
                    <li class="title"><a href="##"><i class="iconfont">&#xe655;</i>商品分类</a></li>
                    <li class="toggle">
                        <a href="##">家用电器</a><i>&gt;</i>
-                       
+                       <div class='toggle-down'>1111111111111111111111111111111111111112111111111111111111111111111111111111111</div>
                     </li>
                    <li class="toggle">
                        <a href="##">手机、运营商、数码</a><i>&gt;</i>
+                       <div class='toggle-down'>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</div>
                     </li>
                    <li class="toggle">
                        <a href="##">电脑、办公</a><i>&gt;</i>
@@ -136,10 +137,10 @@
            </div> 
            <div class="section-center">
                <ul>
-                   <li><a href="##"></a></li>
-                   <li><a href="##"></a></li>
-                   <li><a href="##"></a></li>
-                   <li><a href="##"></a></li>
+                   <li><a href="##" class='img'></a></li>
+                   <li><a href="##" class='img'></a></li>
+                   <li><a href="##" class='img'></a></li>
+                   <li><a href="##" class='img'></a></li>
                </ul>
                <div class="circle">
                    <span class="active"></span>
@@ -147,8 +148,8 @@
                    <span></span>
                    <span></span>
                </div>
-               <a href="" class="arrow arrow-left">&lt;</a>
-               <a href="" class="arrow arrow-right">&gt;</a>
+               <a href="##" class="arrow arrow-left">&lt;</a>
+               <a href="##" class="arrow arrow-right">&gt;</a>
            </div>
            <div class="section-right">
                <div class="news">
@@ -221,7 +222,7 @@
            </div>
         </div>
     </section>
-    <div class="banner">
+    <div class="banner" id='banner2'>
         <div class="container">
            <ul>
                <li>
@@ -246,11 +247,11 @@
                    <a href="###"></a>
                </li>
            </ul>
-           <a href="" class="arrow arrow-left">&lt;</a>
-           <a href="" class="arrow arrow-right">&gt;</a>
+           <a href="##" class="arrow arrow-left">&lt;</a>
+           <a href="##" class="arrow arrow-right">&gt;</a>
         </div>
     </div>
-    <div class="floor">
+    <div class="floor" id="floor">
         <div class="container">
             <div class="floor-item clear">
                 <div class="floor-head">
@@ -259,15 +260,15 @@
                             <h2>服装鞋包</h2>
                         </div>
                         <div class="floor-head-right">
-                            <a href="##" class="link floor-head-right-active">大牌</a>
+                            <a href="##" class="link btn">大牌</a>
                             <span></span>
-                            <a href="##" class="link">男装</a>
+                            <a href="##" class="link btn">男装</a>
                             <span></span>
-                            <a href="##" class="link">女装</a>                   
+                            <a href="##" class="link btn">女装</a>                   
                         </div>
                 </div>
                 <div class="floor-content">
-                    <ul>
+                    <ul class="content">
                         <li>
                             <a href="" class="img"></a>
                             <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -329,7 +330,7 @@
                             <p class="price">99</p>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -391,7 +392,7 @@
                                 <p class="price">99</p>
                             </li>
                     </ul>
-                    <ul>
+                    <ul class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -462,15 +463,15 @@
                             <h2>个护美妆</h2>
                         </div>
                         <div class="floor-head-right">
-                            <a href="##" class="link floor-head-right-active">热门</a>
+                            <a href="##" class="link btn">热门</a>
                             <span></span>
-                            <a href="##" class="link">国际大牌</a>
+                            <a href="##" class="link btn">国际大牌</a>
                             <span></span>
-                            <a href="##" class="link">国际名品</a>                   
+                            <a href="##" class="link btn">国际名品</a>                   
                         </div>
                 </div>
                 <div class="floor-content">
-                    <ul>
+                    <ul  class="content">
                         <li>
                             <a href="" class="img"></a>
                             <a href="" class="shop link">韩束红石榴鲜活水盈七件套装</a>
@@ -532,7 +533,7 @@
                             <p class="price">99</p>
                         </li>
                     </ul>
-                    <ul>
+                    <ul  class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -594,7 +595,7 @@
                                 <p class="price">99</p>
                             </li>
                     </ul>
-                    <ul>
+                    <ul  class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -665,15 +666,15 @@
                                 <h2>手机通讯</h2>
                             </div>
                             <div class="floor-head-right">
-                                <a href="##" class="link floor-head-right-active">热门</a>
+                                <a href="##" class="link btn">热门</a>
                                 <span></span>
-                                <a href="##" class="link">品质优选</a>
+                                <a href="##" class="link btn">品质优选</a>
                                 <span></span>
-                                <a href="##" class="link">新机尝鲜</a>                   
+                                <a href="##" class="link btn">新机尝鲜</a>                   
                             </div>
                     </div>
                     <div class="floor-content">
-                        <ul>
+                        <ul  class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">摩托罗拉 Moto Z Play</a>
@@ -735,7 +736,7 @@
                                 <p class="price">728</p>
                             </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -797,7 +798,7 @@
                                     <p class="price">99</p>
                                 </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -868,15 +869,15 @@
                                 <h2>家用电器</h2>
                             </div>
                             <div class="floor-head-right">
-                                <a href="##" class="link floor-head-right-active">热门</a>
+                                <a href="##" class="link btn">热门</a>
                                 <span></span>
-                                <a href="##" class="link">大家电</a>
+                                <a href="##" class="link btn">大家电</a>
                                 <span></span>
-                                <a href="##" class="link">生活电器</a>                   
+                                <a href="##" class="link btn">生活电器</a>                   
                             </div>
                     </div>
                     <div class="floor-content">
-                        <ul>
+                        <ul  class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">暴风TV 超体电视 40X 40英寸</a>
@@ -938,7 +939,7 @@
                                 <p class="price">1299</p>
                             </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -1000,7 +1001,7 @@
                                     <p class="price">99</p>
                                 </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -1071,15 +1072,15 @@
                                 <h2>电脑数码</h2>
                             </div>
                             <div class="floor-head-right">
-                                <a href="##" class="link floor-head-right-active">热门</a>
+                                <a href="##" class="link btn">热门</a>
                                 <span></span>
-                                <a href="##" class="link">电脑/平板</a>
+                                <a href="##" class="link btn">电脑/平板</a>
                                 <span></span>
-                                <a href="##" class="link">潮流影音</a>                   
+                                <a href="##" class="link btn">潮流影音</a>                   
                             </div>
                     </div>
                     <div class="floor-content">
-                        <ul>
+                        <ul  class="content">
                             <li>
                                 <a href="" class="img"></a>
                                 <a href="" class="shop link">戴尔成就Vostro 3800-R6308</a>
@@ -1141,7 +1142,7 @@
                                 <p class="price">2999</p>
                             </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -1203,7 +1204,7 @@
                                     <p class="price">99</p>
                                 </li>
                         </ul>
-                        <ul>
+                        <ul  class="content">
                                 <li>
                                     <a href="" class="img"></a>
                                     <a href="" class="shop link">匡威男棒球开衫外套2015</a>
@@ -1269,7 +1270,7 @@
             </div>
         </div>
     </div>
-    <div class="fixed-left">        
+    <div class="fixed-left" id="fixedLeft">        
         <ul>
             <li>
                 <a href="##">
@@ -1305,7 +1306,7 @@
                 <a href="##"><i class="iconfont">&#xe670;</i></a>
                 <p>我的消息</p>
             </li>
-            <li>
+            <li class="top">
                 <a href="##"><i class="iconfont last">&#xe60b;</i></a>
                 <p>顶部</p>
             </li>
@@ -1327,5 +1328,6 @@
         </p>
         <p><a href="##" class='link'>© 2014 imooc.com All Rights Reserved</a></p>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

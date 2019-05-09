@@ -17,6 +17,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
+  transition: all .5s ease;
 }
 i {
   font-style: normal;
@@ -76,6 +77,7 @@ header .container .header-right > li .toggle {
   padding: 0 16px 0 12px;
   border-left: 1px solid #f3f5f7;
   border-right: 1px solid #f3f5f7;
+  transition: all .5s ease;
 }
 header .container .header-right > li .toggle i {
   font-size: 8px;
@@ -87,6 +89,8 @@ header .container .header-right > li .dropdown {
   top: 43px;
   border: 1px solid #cdd0d4;
   display: none;
+  transition: all .5s ease;
+  opacity: 0;
 }
 header .container .header-right > li .dropdown a {
   display: block;
@@ -95,6 +99,11 @@ header .container .header-right > li .dropdown a {
   padding: 0 14px;
   white-space: nowrap;
   background-color: #fff;
+}
+header .container .header-right > li .header-active {
+  border-left: 1px solid #cdd0d4;
+  border-right: 1px solid #cdd0d4;
+  background: #ffffff;
 }
 header .container .header-right > li .dropdown-left {
   left: 0;
@@ -246,6 +255,17 @@ section .container .section-left .toggle i {
   position: absolute;
   right: 10px;
 }
+section .container .section-left .toggle .toggle-down {
+  position: absolute;
+  z-index: 3;
+  width: 0;
+  height: 512px;
+  background-color: red;
+  left: 208px;
+  top: 0;
+  overflow: hidden;
+  transition: all .5s ease;
+}
 section .container .section-center {
   float: left;
   margin-left: 216px;
@@ -257,8 +277,11 @@ section .container .section-center ul a {
   position: absolute;
   width: 100%;
   height: 504px;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 section .container .section-center li:nth-of-type(1) a {
+  opacity: 1;
   background: url(../img/focus-slider/1.png) no-repeat;
 }
 section .container .section-center li:nth-of-type(2) a {
@@ -266,6 +289,9 @@ section .container .section-center li:nth-of-type(2) a {
 }
 section .container .section-center li:nth-of-type(3) a {
   background: url(../img/focus-slider/3.png) no-repeat;
+}
+section .container .section-center li:nth-of-type(4) a {
+  background: url(../img/focus-slider/4.png) no-repeat;
 }
 section .container .section-center .circle {
   position: absolute;
@@ -290,6 +316,7 @@ section .container .section-center .circle .active {
 }
 section .container .section-center .arrow {
   position: absolute;
+  display: none;
   width: 28px;
   height: 62px;
   line-height: 62px;
@@ -370,6 +397,8 @@ section .container .section-right .right-ad {
 }
 .banner .container li {
   position: absolute;
+  transition: all .5s ease;
+  opacity: 1;
 }
 .banner .container li a {
   float: left;
@@ -423,6 +452,7 @@ section .container .section-right .right-ad {
 }
 .banner .container .arrow {
   position: absolute;
+  display: none;
   width: 28px;
   height: 62px;
   line-height: 62px;
@@ -1076,6 +1106,8 @@ section .container .section-right .right-ad {
 }
 .fixed-left {
   position: fixed;
+  display: none;
+  z-index: 6;
   top: 50%;
   left: 50%;
   transform: translate(-640px, -50%);
